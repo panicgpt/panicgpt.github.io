@@ -1,0 +1,68 @@
+PanicGPT - AI Startup Typing Game
+
+Core Concept:
+- Fast-paced typing game themed around AI startup culture
+- Players type AI-related terms in 15 seconds
+- Humorous take on startup pivots and tech jargon
+
+Game Mechanics:
+1. Timer & Scoring
+   - 15-second countdown
+   - Auto-start on first keystroke
+   - +1 point per correct word
+   - Game ends on timeout or all words complete
+
+2. Word System
+   - Words visible upfront and shuffled randomly
+   - Case-insensitive matching
+   - Space/Tab/Enter to submit word
+   - Backspace supported
+   - AI/ML focused word list with varying lengths
+   - No spaces in words
+
+3. Visual States
+   - Active word: White (100% opacity)
+   - Untyped words: Dark gray (50% opacity)
+   - Completed words: Green (40% opacity)
+   - Skipped words: Red strikethrough (40% opacity)
+   - Correct letters: Green
+   - Incorrect letters: Red
+   - Blinking caret in active word
+
+Design:
+1. Desktop
+   - Dark theme (#1a1a1a background)
+   - Neon green (#0f0) accents
+   - Max width 800px
+   - Company-style logo in top left
+   - Monospace font throughout
+
+2. Mobile Optimization
+   - Condensed layout with reduced spacing
+   - Smaller font sizes
+   - 15px side padding
+   - Visible footer
+   - Touch-friendly button sizes
+   - No scrolling required
+   - Proper viewport handling
+
+3. Game States
+   - Start: Instructions with startup theme
+   - Playing: Word display with stats bar
+   - End: Score with humorous message and themed GIF
+   - Try Again button for restart
+
+User Experience:
+- Zero-friction start (just type)
+- Immediate visual feedback
+- Mobile-first responsive design
+- Clear visual hierarchy
+- Persistent game state until manual restart
+- Touch and keyboard input support
+
+Theme:
+- Satirical startup culture
+- AI/ML buzzwords
+- Tech industry humor
+- Themed end-game messages and GIFs
+- Startup pivot narrative
