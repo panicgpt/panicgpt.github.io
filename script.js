@@ -247,6 +247,9 @@ function getEndGameContent(score) {
 // Event Handlers
 // ==========================================================================
 function handleKeydown(e) {
+    // Ignore keydown events from the mobile input field
+    if (e.target.tagName === 'INPUT') return;
+    
     if (!gameState.gameActive && !gameState.gameEnded && e.key.length === 1) {
         startGame();
     }
@@ -324,8 +327,11 @@ function setupMobileEventListeners(inputField) {
         inputField.focus();
     });
 
-    inputField.addEventListener('input', handleMobileInput);
-    inputField.addEventListener('keydown', handleMobileKeydown);
+    // Only use input event for mobile devices
+    if ('ontouchstart' in window) {
+        inputField.addEventListener('input', handleMobileInput);
+        inputField.addEventListener('keydown', handleMobileKeydown);
+    }
 }
 
 function handleMobileKeydown(e) {
